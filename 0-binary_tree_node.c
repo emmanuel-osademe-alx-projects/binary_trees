@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree-node - Create a binary tree node
+ * binary_tree_node - Create a binary tree node
  * @parent: pointer to the parent of the node
  * @value: value of the node
  * Return: binary tree or NULL if fail
@@ -13,7 +13,8 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 
 	tree = malloc(sizeof(binary_tree_t));
 
-	if (tree == NULL){
+	if (tree == NULL)
+	{
 		return (NULL);
 	}
 
